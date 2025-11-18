@@ -1,16 +1,13 @@
-# weather_app
+# 🌤️ Weather App – Tugas Flutter Day 12
 
-A new Flutter project.
+Weather App ini dibuat sebagai bagian dari tugas pembuatan aplikasi Flutter dengan konsep **navigasi multi halaman** dan pengelolaan data cuaca secara sederhana. Aplikasi ini menampilkan informasi cuaca dasar dan menggunakan struktur kode yang terorganisir.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Fitur Aplikasi
+- Menampilkan informasi cuaca dari API atau data mock.
+- Navigasi multi halaman (Home → Detail).
+- Struktur folder yang rapi (screens, services, widgets).
+- Pengolahan data menggunakan fungsi yang terpisah agar lebih mudah dirawat.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
