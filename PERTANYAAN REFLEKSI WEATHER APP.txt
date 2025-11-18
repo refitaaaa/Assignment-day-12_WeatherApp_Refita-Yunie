@@ -1,0 +1,14 @@
+PERTANYAAN REFLEKSI WEATHER APP
+
+Dari proses membuat navigasi multi halaman pada Weather App, bagaimana kamu memastikan alur berpindah halaman tetap efisien dan mudah dipahami pengguna?
+Untuk memastikan alur navigasi efisien dan mudah dipahami, saya melakukan beberapa hal:
+Pertama, saya menggunakan Navigator.push() dan Navigator.pop() yang sederhana. Jadi user bisa dengan mudah maju ke halaman baru atau kembali ke halaman sebelumnya tanpa bingung.
+Kedua, saya menambahkan button "arrow_back" di AppBar setiap halaman kecuali HomePage. Ini penting karena user jadi tahu mereka bisa kembali ke halaman sebelumnya dengan jelas. Icon panah itu sudah familiar buat kebanyakan orang jadi langsung paham fungsinya.
+Ketiga, saya membuat alur yang logis. HomePage sebagai pusat, dari sana user bisa ke CityListPage atau AboutPage. Terus dari CityListPage bisa lanjut ke DetailPage kalau mau lihat detail kota tertentu. Jadi tidak ada navigasi yang memutar-mutar atau membingungkan.
+Keempat, saya kasih label yang jelas di setiap button seperti "Lihat Kota Lain", "Tentang Aplikasi", "Kembali". Jadi user langsung tahu mau kemana setelah pencet button itu.
+
+2. Bagaimana kamu mengelola data saat berpindah antar halaman agar tetap akurat dan tidak menyebabkan redundant code? Jelaskan pendekatan atau solusi yang kamu gunakan?
+Untuk mengurangi redundant code, saya mengelompokkan fungsi seperti fetch data cuaca ke dalam satu service agar bisa dipanggil dari halaman mana pun. Saat berpindah halaman, saya mengirimkan data melalui parameter atau memanggil ulang service sesuai kebutuhan. Dengan begitu, data tetap akurat, tidak terjadi duplikasi logika, dan perubahan cukup dilakukan di satu tempat saja.
+
+3. Setelah menyelesaikan tugas ini, apa insight atau pelajaran paling penting yang kamu dapatkan tentang pentingnya struktur navigasi dan modularisasi dalam pengembangan aplikasi Flutter?
+Saya menyadari bahwa navigasi yang terstruktur membuat aplikasi lebih mudah dikembangkan dan dipahami. Modularisasi juga sangat membantu karena setiap bagian aplikasi dipisahkan berdasarkan fungsi, sehingga kode lebih rapi, mudah dirawat, dan scalable. Kombinasi keduanya meningkatkan kualitas aplikasi dan mempermudah proses debugging.
